@@ -12,7 +12,12 @@ namespace MVCMovie.Controllers
 
         private MovieContext db;
 
- 
+        public MoviesController(MovieContext context)
+        {
+            db = context;
+        }
+
+
 
         public IActionResult Index()
         {
