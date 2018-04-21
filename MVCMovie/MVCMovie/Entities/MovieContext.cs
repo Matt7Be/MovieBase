@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using MVCMovie.Models;
 
 namespace MVCMovie.Entities
 {
@@ -96,5 +97,7 @@ namespace MVCMovie.Entities
                     .IsUnicode(false);
             });
         }
+
+        public DbSet<MVCMovie.Models.MovieItemVM> MovieItemVM { get; set; }
     }
 }

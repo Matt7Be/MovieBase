@@ -18,18 +18,18 @@ namespace MVCMovie.Models
 
         public string Title { get; set; }
 
-        [Display(Name = "What happens?")]
+        [Display(Name = "Description")]
         public string Description { get; set; }
 
         public int Year { get; set; }
 
-        [Display(Name = "How much is this rated?")]
+        [Display(Name = "Rating")]
         public byte Rating { get; set; }
 
-        [Display(Name = "The Director")]
+        [Display(Name = "Director")]
         public string Director { get; set; }
 
-        [Display(Name = "All the actors")]
+        [Display(Name = "Actors")]
         public ICollection<MovieActorVM> Actors;
     }
 }
