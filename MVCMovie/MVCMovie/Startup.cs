@@ -43,7 +43,7 @@ namespace MVCMovie
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=movies}/{action=Index}/{id?}");
             });
         }
     }
